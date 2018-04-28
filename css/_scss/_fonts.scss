@@ -1,2 +1,11 @@
 // Font Variables
-@import url('https://fonts.googleapis.com/css?family=Avenir');
+
+$clickme: "Ubuntu";
+$clickme-fallback: sans-serif;
+$body: "Lora";
+$body-fallback: serif;
+
+$clickme-fontsize: 100px;
+$clickme-mobile-font-size: 45px;
+
+@import url('https://fonts.googleapis.com/css?family=Lora|Ubuntu');

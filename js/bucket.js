@@ -1,7 +1,9 @@
 $(document).ready(function() {
  // jQuery UI Widgets
 
-  $( "#tabs" ).tabs();
-  $( "#accordion" ).accordion();
-
-});
+  $(".navbar a").click(function(){
+  $("body,html").animate({
+   scrollTop:$("#" + $(this).data('value')).offset().top
+  },1000)
+  
+ });

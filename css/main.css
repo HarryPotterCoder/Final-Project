@@ -1,100 +1,161 @@
-@import url("https://fonts.googleapis.com/css?family=Lora|Ubuntu");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-html, body {
-  height: 100%; }
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body {
-  display: grid;
-  font-family: "Ubuntu", sans-serif;
-  color: #111; }
+body{
+  padding: 0;
+  margin: 0;
+  background:#f4f4f4;
+}
+html,h1,h2,h3,h4,h5,h6,a{
+  font-family: "Raleway";
+}
+.navbar{
+  background:#F97300;
+}
+.nav-link , .navbar-brand{
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.nav-link{
+  margin-right: 1em !important;
+}
+.nav-link:hover{
+  background: #f4f4f4;
+  color: #f97300;
 
-a {
-  text-decoration: none;
-  color: inherit; }
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
 
-.cta {
+/*header style*/
+.header{
   position: relative;
-  margin: auto;
-  padding: 19px 22px;
-  transition: all .2s ease; }
-  .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background: rgba(51, 153, 204, 0.5);
-    width: 56px;
-    height: 56px;
-    transition: all .3s ease; }
+  background-image: url('../images/headerback.jpg');
 
-span {
-  position: relative;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 900;
-  letter-spacing: .25em;
-  text-transform: uppercase;
-  vertical-align: middle; }
-
-svg {
-  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.overlay{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
   top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #111;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all .3s ease; }
-  svg:hover:before {
-    width: 100%;
-    background: #3399cc; }
+  background: rgba(244, 244, 244, 0.79);
+}
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
 
-svg {
-  transform: translateX(0); }
-  svg:active {
-    transform: scale(0.96); }
-
-html, h1, h2, h3, h4, h5, h6, a {
-  font-family: "Lora", serif; }
-
-.team {
+}
+.description h1{
+  color:#F97300 ;
+}
+.description p{
+  color:#666;
+  font-size: 20px;
+  width: 50%;
+  line-height: 1.5;
+}
+.description button{
+  border:1px  solid #F97300;
+  background:#F97300;
+  color:#fff;
+}
+.about{
   margin: 4em 0;
-  position: relative; }
+  padding: 1em;
+  position: relative;
+}
+.about h1{
+  color:#F97300;
+  margin: 2em;
+}
+.about img{
+  height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+  display: block;
+  color: #888;
+  position: absolute;
+  left: 115px;
+}
+.about .desc{
+  padding: 2em;
+  border-left:4px solid #10828C;
+}
+.about .desc h3{
+  color: #10828C;
+}
+.about .desc p{
+  line-height:2;
+  color:#888;
+}
 
-.team h1 {
-  color: #3399cc;
-  margin: 2em; }
+@media and (max-width: 768px){
+ .team .item img{
+  width: 100%;
+ }  
 
-.team .item {
-  position: relative; }
+.team{
+  margin: 4em 0;
+  position: relative;
 
-.team .des {
-  background: #111;
+}
+.team h1{
+  color:#F97300;
+  margin: 2em;  
+}
+.team .item{
+  position: relative;
+  overflow: hidden; 
+}
+.team .des{
+  background: #F97300;
   color: #fff;
   text-align: center;
-  border-bottom-left-radius: 93%;
-  transition: .3s ease-in-out; }
+  border-top-right-radius: 93%;
+  transition:.3s ease-in-out;
+  position: absolute;
+  width: 88%;
+  bottom: 24px;
 
-.contact-form {
+}
+
+.team .item:hover .des{
+  height: 100%;
+  background:#f973007d;
+    position: absolute;
+  width: 89%;
+  padding: 5em;
+  top: 0;
+  border-top-right-radius: 0;
+}
+.contact-form{
   margin: 6em 0;
-  position: relative; }
+  position: relative;   
+}
 
-.contact-form h1 {
-  padding: 2em 1px;
-  color: #111; }
-
-.contact-form .right {
-  max-width: 600px; }
-
-.contact-form .right .btn-secondary {
-  background: #f97300;
-  color: white;
-  border: 0; }
-
-.contact-form .right .form-control::placeholder {
-  color: #888888;
-  font-size: 16px; }
+.contact-form h1{
+  padding:2em 1px;
+  color: #F97300; 
+}
+.contact-form .right{
+  max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+  background:  #F97300;
+  color: #fff;
+  border:0;
+}
+.contact-form .right .form-control::placeholder{
+  color: #888;
+  font-size: 16px;
+}

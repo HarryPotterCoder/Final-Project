@@ -72,13 +72,32 @@
       html,h1,h2,h3,h4,h5,h6,a{
         font-family: $html, $html-fallback;}
 
+      .team{
+         margin: 4em 0;
+         position: relative;  
+        }
+        .team h1{
+         color:$primary;
+         margin: 2em; 
+        }
+        .team .item{
+         position: relative;
+        }
+        .team .des{
+         background: $color;
+         color: #fff;
+         text-align: center;
+         border-bottom-left-radius: 93%;
+         transition:.3s ease-in-out;
+        }
+
       .contact-form {
         margin: 6em 0;
         position: relative;}
 
       .contact-form h1 {
         padding: 2em 1px;
-        color: #f97300;}
+        color: $color;}
 
       .contact-form .right {
         max-width: 600px;}

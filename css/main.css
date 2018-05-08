@@ -64,7 +64,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 .description button{
   border:1px  solid #F97300;
-  background:#F97300;
+  color:#F97300;
   color:#fff;
 }
 .about{
@@ -99,11 +99,6 @@ html,h1,h2,h3,h4,h5,h6,a{
   color:#888;
 }
 
-@media and (max-width: 768px){
- .team .item img{
-  width: 100%;
- }  
-
 .team{
   margin: 4em 0;
   position: relative;
@@ -128,11 +123,10 @@ html,h1,h2,h3,h4,h5,h6,a{
   bottom: 24px;
 
 }
-
 .team .item:hover .des{
   height: 100%;
-  background:#f973007d;
-    position: absolute;
+  color:#f973007d;
+  position: absolute;
   width: 89%;
   padding: 5em;
   top: 0;
@@ -151,7 +145,7 @@ html,h1,h2,h3,h4,h5,h6,a{
   max-width: 600px;
 }
 .contact-form .right .btn-secondary{
-  background:  #F97300;
+  color: #F97300;
   color: #fff;
   border:0;
 }
